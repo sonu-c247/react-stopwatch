@@ -1,5 +1,5 @@
 import Button from "./Button";
-import styles from "./controls.module.css";
+import styles from "./controls.module.scss";
 
 const Controls = ({ onClick, isStarted }) => {
   return (

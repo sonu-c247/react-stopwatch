@@ -1,4 +1,4 @@
-import styles from "./watch.module.css";
+import styles from "./watch.module.scss";
 
 const paddedTime = (num) => {
   return num.toString().padStart(2, 0);
@@ -13,7 +13,11 @@ const formatTime = (timeInSeconds) => {
 };
 
 const Watch = ({ currentTime }) => {
-  return <div className={styles.container}>{formatTime(currentTime)}</div>;
+  return (
+    <div className={`${styles.container} p-10 p-top-8 m-top-10`}>
+      {formatTime(currentTime)}
+    </div>
+  );
 };
 
 export default Watch;

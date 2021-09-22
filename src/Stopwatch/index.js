@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import Controls from "./Controls";
-import styles from "./stopwatch.module.css";
+import styles from "./stopwatch.module.scss";
 import Watch from "./Watch";
 
 export const Stopwatch = () => {
