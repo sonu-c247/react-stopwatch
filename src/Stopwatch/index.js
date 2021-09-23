@@ -3,7 +3,7 @@ import Controls from "./Controls";
 import styles from "./stopwatch.module.scss";
 import Watch from "./Watch";
 
-export const Stopwatch = () => {
+export const Stopwatch = (props) => {
   const [timer, setTimer] = useState(0);
   const [isTimerStarted, setIsTimerStarted] = useState(0);
   const interval = useRef();
